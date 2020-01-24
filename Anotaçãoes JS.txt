@@ -1,0 +1,26 @@
+aula 1 - funcao inline( dentro da tag do html, ex: onclick)
+
+aula 2 - Referenciar elementos (getElementById, getElementsByTagname => este sempre retorna um vetor
+         getElementsByClassName => vetor de elementos com a classe
+         FORMA MAIS USADA -> querySelector('body div#app input')
+	buscando pelo atributo querySelector('input[name = nome]')
+
+ex:
+   var inputElement = documento.querySelector('input[name = nome]');
+   var btnElement = document.querySelector('button.botao');
+
+   btnElement.onclick = function() {
+     var text = input.Element.value;
+
+      alert('text')
+   }			
+
+Aula 3 - Criando elemento
+      document.createElement('NomeTag')
+      elemento.setAttributte('atributo', 'valor')
+      elemento.appendChild(elemento)//insere um elemento dentro de outro no HTML		
+      removeChild(elemento) => remove um elemento de dentro de outro no HTML
+
+
+Aula 4
+
