@@ -28,8 +28,10 @@
         return color;
     }
     var newColor = getRandomColor();
+    console.log(newColor); 
+    addEventListener('mouseover', over)
 
-    var quadrado = document.getElementById('quadrado');
-    quadrado.addEventListener('mouseover', function(event) {
-        quadrado.style.backgroundColor = newColor;
-    }) 
+    function over(){
+        quadrado = document.getElementById('quadrado');
+        quadrado.style.background = newColor;
+    }
