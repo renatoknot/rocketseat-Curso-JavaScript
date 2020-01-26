@@ -22,5 +22,7 @@ Aula 3 - Criando elemento
       removeChild(elemento) => remove um elemento de dentro de outro no HTML
 
 
-Aula 4
+Aula 4 - Alterando estilos
+       element.style.width = "100px";
+       element.style.backgroundColor  = '#F00';
 
