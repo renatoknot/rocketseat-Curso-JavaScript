@@ -23,3 +23,32 @@
 
         squaresElement.appendChild(square);
     }
+
+
+    //exercicio 3
+
+    var nomes = ["Diego", "Gabriel", "Lucas"];
+    var lista = document.getElementById('lista');
+    var inputName = document.querySelector('input[name = nome]');
+    
+
+    function addItem(texto){
+        var liElement = document.createElement('li');
+        var textElement = document.createTextNode(texto);
+        
+        liElement.appendChild(textElement);
+        lista.appendChild(liElement);
+    }
+    function adicionar() {
+        addItem(inputName.value);
+        inputName.value ='';
+    }
+    
+    for (nome of nomes) {
+        addItem(nome);
+    }
+    
+    
+    
+    
+    
