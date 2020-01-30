@@ -12,7 +12,7 @@ xhr.onreadystatechange = function() {
 }
 */
 
-/* USANDO PROMISES */
+/* USANDO PROMISES 
 var minhaPromise = function(){
     return new Promise(function(resolve, reject) {
         var xhr = new XMLHttpRequest();
@@ -36,5 +36,20 @@ minhaPromise()
      console.log(response);
  })
  .catch(function(error) {
-     console.log(error);
- })
+     console.warn(error);
+ }) */
+
+ 
+
+
+
+
+ /* USANDO AXIOS */
+
+ axios.get('https://api.github.com/users/diego3g')
+    .then(function(response) {
+        console.log(response);
+    })
+    .catch(function(error) {
+        console.warn(error);
+    })
